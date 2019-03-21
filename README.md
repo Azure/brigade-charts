@@ -1,9 +1,22 @@
 
 # Brigade Charts
 
-Helm charts for the [Azure/Brigade](https://github.com/Azure/brigade) project
+Helm charts for the [Brigade](https://github.com/brigadecore/brigade) project have been moved to
+[brigadecore/charts](https://github.com/brigadecore/charts).
 
-**Under Construction**: Charts are currently being transferred to this repository from other sources.
+During the transitional phase, we will continue to serve an index file in this repo pointing
+to the new chart URL.  However, future chart releases will not be added to this repo.
+
+All subsequent chart releases will be served at the new URL: `https://brigadecore.github.io/charts`
+
+Please update your local Helm repo:
+
+  ```
+  helm repo remove brigade
+  helm repo add brigade https://brigadecore.github.io/charts
+  ```
+
+This `Azure/brigade-charts` repo will be deleted after the transition is complete.
 
 # Contributing
 
